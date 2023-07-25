@@ -41,12 +41,12 @@ app/assets/115727397/6d8a009a-7622-4fa9-985e-b80e31cf0850" width="50%"/>
 <img src="https://github.com/mostaphasamir/chat-app/assets/115727397/f4a69f19-0d26-4530-aef0-279de15db4b8" width="49%"/>
 
 ### Users 
-<img src="https://github.com/mostaphasamir/chat-app/assets/115727397/c9212cdb-3ced-467e-906e-2f720ec33e10" width="50%"/>
+<img src="https://github.com/mostaphasamir/chat-app/assets/115727397/c9212cdb-3ced-467e-906e-2f720ec33e10" width="300"/>
 
 ### Chat 
-<img src="https://github.com/mostaphasamir/chat-app/assets/115727397/20bdc76f-9eab-4977-a23a-4f36cbfe166b" width="50%"/>
+<img src="https://github.com/mostaphasamir/chat-app/assets/115727397/20bdc76f-9eab-4977-a23a-4f36cbfe166b" width="300"/>
 
 ### Settings
 
 #### You can upload your profile image and change your Name
-<img src="https://github.com/mostaphasamir/chat-app/assets/115727397/297324ed-8a3f-41e3-839f-701ec1f05de2" width="50%"/>
+<img src="https://github.com/mostaphasamir/chat-app/assets/115727397/297324ed-8a3f-41e3-839f-701ec1f05de2" width="300"/>
