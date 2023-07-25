@@ -4,11 +4,11 @@ import 'package:scholar_chat/core/constant/color.dart';
 import 'package:scholar_chat/controller/settings_controller.dart';
 import 'package:scholar_chat/model/user_model.dart';
 
-import '../widget/default_botton.dart';
+import '../widget/default_button.dart';
 import '../widget/default_tff.dart';
 
 class SettingsScreen extends StatelessWidget {
-  SettingsController controller= Get.put(SettingsController());
+  final SettingsController controller= Get.put(SettingsController());
 
    SettingsScreen({super.key});
   @override
@@ -83,7 +83,7 @@ class SettingsScreen extends StatelessWidget {
                               onChange: (value){
                                 controller.name=value;
                               },
-                              prefixIcon: Icon(Icons.person),
+                              prefixIcon: const Icon(Icons.person),
                               label: const Text('Name'),
 
                             ),

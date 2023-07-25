@@ -12,12 +12,12 @@ import 'app_routes.dart';
 
 List<GetPage<dynamic>>? routes =[
   GetPage(name: AppRoutes.splashScreen, page: ()=>  SplashScreen()),
-  GetPage(name: AppRoutes.firstScreen, page: ()=>  LoginScreen(),transition: Transition.downToUp,transitionDuration: Duration(milliseconds: 1500 )),
+  GetPage(name: AppRoutes.firstScreen, page: ()=>  LoginScreen(),transition: Transition.downToUp,transitionDuration: const Duration(milliseconds: 1500 )),
   GetPage(name: AppRoutes.loginScreen, page: ()=>  LoginScreen()),
-  GetPage(name: AppRoutes.forgotPasswordScreen, page: ()=>  ForgotPasswordScreen()),
+  GetPage(name: AppRoutes.forgotPasswordScreen, page: ()=>  const ForgotPasswordScreen()),
   GetPage(name: AppRoutes.registerScreen, page: ()=>  RegisterScreen()),
-  GetPage(name: AppRoutes.usersScreen, page: ()=>  UsersScreen()),
-  GetPage(name: AppRoutes.chatDetailsScreen, page: ()=>  ChatDetailsScreen()),
+  GetPage(name: AppRoutes.usersScreen, page: ()=>  const UsersScreen()),
+  GetPage(name: AppRoutes.chatDetailsScreen, page: ()=>  const ChatDetailsScreen()),
   GetPage(name: AppRoutes.settingsScreen, page: ()=> SettingsScreen()),
 ];
 

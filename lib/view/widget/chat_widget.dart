@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:scholar_chat/core/constant/color.dart';
 import 'package:scholar_chat/model/messege_model.dart';

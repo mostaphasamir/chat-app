@@ -4,13 +4,13 @@ import 'package:scholar_chat/core/constant/color.dart';
 import 'package:scholar_chat/controller/register_controller.dart';
 
 import '../../app_routes.dart';
-import '../widget/default_botton.dart';
+import '../widget/default_button.dart';
 import '../widget/default_tff.dart';
 
 
 class RegisterScreen extends StatelessWidget {
   RegisterScreen({Key? key}) : super(key: key);
-  RegisterController controller = Get.put(RegisterController());
+  final RegisterController controller = Get.put(RegisterController());
 
   @override
   Widget build(BuildContext context) {
@@ -88,8 +88,8 @@ class RegisterScreen extends StatelessWidget {
                       builder: (controller) => defaultTFF(
                         suffixIcon: Icon(
                           controller.isPasswordHide
-                              ? Icons.remove_red_eye_outlined
-                              : Icons.visibility_off,
+                              ?Icons.visibility_off
+                              : Icons.remove_red_eye_outlined,
                         ),
                         suffixIconOnPressed: () {
                           controller.hidePassword();

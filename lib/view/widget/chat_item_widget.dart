@@ -11,12 +11,13 @@ Widget chatItem({
       padding: const EdgeInsets.all(10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        gradient: LinearGradient(colors: [
-          AppColor.primaryColor.withOpacity(.5),
-          AppColor.primaryColor.withOpacity(.4),
-        ],
+        gradient: LinearGradient(
+          colors: [
+            AppColor.primaryColor.withOpacity(.5),
+            AppColor.primaryColor.withOpacity(.4),
+          ],
           begin: Alignment.centerLeft,
-          end:Alignment.centerRight ,
+          end: Alignment.centerRight,
         ),
       ),
       child: Row(
@@ -26,7 +27,9 @@ Widget chatItem({
             children: [
               CircleAvatar(
                 radius: 30.0,
-                backgroundImage: NetworkImage(imageURL==''?'https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Face-Profile-User-Man-Boy-Person-Avatar-512.png':imageURL),
+                backgroundImage: NetworkImage(imageURL == ''
+                    ? 'https://cdn2.iconfinder.com/data/icons/people-flat-design/64/Face-Profile-User-Man-Boy-Person-Avatar-512.png'
+                    : imageURL),
               ),
               const Padding(
                 padding: EdgeInsetsDirectional.only(
@@ -68,18 +71,22 @@ Widget chatItem({
                         overflow: TextOverflow.ellipsis,
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 10,
-                      ),
-                      child: Container(
-                        width: 5,
-                        height: 5,
-                        decoration: const BoxDecoration(
-                            color: Colors.black, shape: BoxShape.circle),
-                      ),
-                    ),
-                    Text('$time'),
+                    time != null
+                        ? Padding(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                            ),
+                            child: Container(
+                              width: 5,
+                              height: 5,
+                              decoration: const BoxDecoration(
+                                color: Colors.black,
+                                shape: BoxShape.circle,
+                              ),
+                            ),
+                          )
+                        : Container(),
+                    Text(time ?? ''),
                   ],
                 ),
               ],

@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:scholar_chat/core/constant/color.dart';
 
 import '../../controller/forgot_password_controller.dart';
-import '../widget/default_botton.dart';
+import '../widget/default_button.dart';
 import '../widget/default_tff.dart';
 
 

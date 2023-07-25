@@ -4,11 +4,13 @@ import 'package:scholar_chat/app_routes.dart';
 import 'package:scholar_chat/core/constant/color.dart';
 
 import '../../controller/login_controller.dart';
-import '../widget/default_botton.dart';
+import '../widget/default_button.dart';
 import '../widget/default_tff.dart';
 
 class LoginScreen extends StatelessWidget {
-  LoginControllerImp controller = Get.put(LoginControllerImp());
+  final LoginControllerImp controller = Get.put(LoginControllerImp());
+
+   LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -78,7 +80,7 @@ class LoginScreen extends StatelessWidget {
                     GetBuilder<LoginControllerImp>(
                         builder: (controller) => defaultTFF(
                           hintText: 'password',
-                          suffixIcon: Icon(controller.isPasswordHide?Icons.remove_red_eye_outlined:Icons.visibility_off),
+                          suffixIcon: Icon(controller.isPasswordHide?Icons.visibility_off:Icons.remove_red_eye_outlined),
                           suffixIconOnPressed:(){
                             controller.hidePassword();
                           },

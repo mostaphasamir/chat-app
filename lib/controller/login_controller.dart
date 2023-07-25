@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:scholar_chat/app_routes.dart';
@@ -60,7 +59,6 @@ class LoginControllerImp extends LoginController
             (e){
               isLoading=false;
               update();
-              print(e.code);
                Get.snackbar('error', e.toString());
             });
   }

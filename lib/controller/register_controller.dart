@@ -45,7 +45,6 @@ class RegisterController extends GetxController {
     update();
     dynamic formData = formState.currentState;
     if (formData!.validate()) {
-
         FirebaseAuth auth = FirebaseAuth.instance;
         auth.createUserWithEmailAndPassword(email: email.text, password: password.text)
           .then((value){
@@ -62,7 +61,7 @@ class RegisterController extends GetxController {
       }).catchError((e) {
         isLoading = false;
         update();
-        return Get.snackbar('Error', e.toString());
+        Get.snackbar('Error', e.toString());
       });
     }
   }

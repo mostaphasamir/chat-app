@@ -21,7 +21,7 @@ class HomeController extends GetxController
             FirebaseFirestore.instance.collection('users').doc(auth.currentUser!.uid).collection('chats').doc(senderUser.uID).collection('messages').add(messageModel.toMap());
             FirebaseFirestore.instance.collection('users').doc(senderUser.uID).collection('chats').doc(auth.currentUser!.uid).collection('messages').add(messageModel.toMap());
             textController.clear();
-            controllerListView.animateTo(0, duration: Duration(seconds: 1), curve: Curves.fastOutSlowIn);
+            controllerListView.animateTo(0, duration: const Duration(seconds: 1), curve: Curves.fastOutSlowIn);
         }catch(e){
             Get.snackbar('error', e.toString());
         }

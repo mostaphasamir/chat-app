@@ -22,7 +22,6 @@ class ForgotPasswordController extends GetxController {
 
   resetPassword() async {
     try {
-      print(email.text.trim());
       auth.sendPasswordResetEmail(
         email: email.text,
       );
